@@ -1,14 +1,16 @@
 import Link from 'next/link'
 
+import styles from './navbar.module.css';
+
 export default function Navbar() {
     return (
         <>
-            <nav>
-                <div>
-                    <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li><Link href="/about">About</Link></li>
-                        <li><Link href="/classes">Classes</Link></li>
+            <nav className={styles.navbar}>
+                <div className={styles.container}>
+                    <ul className={styles.navList}>
+                        <li className={styles.navLink}><Link href="/">Home</Link></li>
+                        <li className={styles.navLink}><Link href="/about">About</Link></li>
+                        <li className={styles.navLink}><Link href="/classes">Classes</Link></li>
                     </ul>
                 </div>
             </nav>
