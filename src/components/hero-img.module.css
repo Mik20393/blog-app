@@ -1,0 +1,5 @@
+.heroImg {
+    position: relative;
+    opacity: 0.85;
+    z-index: -1;
+}
