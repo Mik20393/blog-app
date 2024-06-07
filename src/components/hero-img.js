@@ -11,7 +11,7 @@ export default function HeroImage() {
                 src={bannerImage} 
                 alt="background image" 
                 fill={true}
-                objectFit='cover'
+                
                 />
             </div>
         </>
