@@ -5,7 +5,7 @@ import HeroImage from "@/components/hero-img";
 export default function Home() {
   return (
     <>
-      <section className={styles.baseSection}>
+      <section className={styles.baseSection} id="home">
         <HeroImage />
         <h1>Home Page</h1>
       </section>
