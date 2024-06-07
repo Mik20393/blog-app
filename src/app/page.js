@@ -5,13 +5,16 @@ import HeroImage from "@/components/hero-img";
 export default function Home() {
   return (
     <>
-      <main className={styles.home}>
+      <section className={styles.baseSection}>
         <HeroImage />
         <h1>Home Page</h1>
-      </main>
-      <main className={styles.home}>
-        <h1>About Page</h1>
-      </main>
+      </section>
+      <section className={styles.baseSection} id="about">
+        <h1>About Section</h1>
+      </section>
+      <section className={styles.baseSection} id="contact">
+        <h1>Contact Section</h1>
+      </section>
     </>
   );
 }
