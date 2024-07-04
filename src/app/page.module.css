@@ -9,11 +9,14 @@
 }
 
 .mainTitle {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 8vw;
+  font-weight: lighter;
 }
 
 .sectionTitle {
@@ -41,13 +44,21 @@
 }
 
 .baseContainer {
-  height: 75%;
-  width: 50%;
+  height: 90%;
+  width: 75%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
   border: 2.5px solid white;
+}
+
+.img {
+ object-fit: cover; 
+ height: 100%;
+ width: 100%;
+ border-radius: 20px;
 }
 
 /* Enable hover only on non-touch devices */

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import bannerImage from '@/public/pilates_tile.png';
 import styles from './hero-img.module.css';
 
 export default function HeroImage({src, alt}) {

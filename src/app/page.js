@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from "./page.module.css";
 
 import HeroImage from "@/components/hero-img";
@@ -9,7 +10,6 @@ import bannerImage from '@/public/pilates_tile.png';
 export default function Home() {
   return (
     <>
-
       <section className={styles.baseSection} id="home">
         <HeroImage src={bannerImage} alt="Image of Robyn in a pilates pose"/>
         <div className={styles.mainTitle}>
@@ -25,12 +25,19 @@ export default function Home() {
         <div className={styles.content}>
           <div className={styles.column}>
             <div className={styles.baseContainer}>
-              <h1>Image Container</h1>
+                <Image
+                className={styles.img} 
+                src={bannerImage} 
+                alt="Image of Robyn in a pilates pose"
+                />
             </div>
           </div>
           <div className={styles.column}>
             <div className={styles.baseContainer}>
               <h1>Text Container</h1>
+              <h3>Here you can write</h3>
+              <h3>Some stuff about</h3>
+              <h3>what you do</h3>
             </div>
           </div>
         </div>
